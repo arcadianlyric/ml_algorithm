@@ -44,24 +44,6 @@ def by_algo(max_attempts, max_iters, maximize, max_val, length, algo, fitness_fn
     ins.ga_hypterparameter(range_mutation_prob, range_pop_size)
 
 
-    # # FourPeaks t_pct
-    # if algo=='FourPeaks':
-    #     for i in [0.1,0.3,0.5]:
-    #         fitness_fn = mlrose_hiive.FourPeaks(t_pct=i)
-    #         ins = random_optimization(max_attempts, max_iters, maximize, max_val, length,  fitness_fn, algo)
-    #         ins.problem_size(length)
-    #         ins.plot_t_pct(i)
-
-    # # Knapsack max_weight_pct
-    # if algo=='Knapsack':
-    #     for i in [0.1,0.3,0.5]:
-    #         fitness_fn = mlrose_hiive.Knapsack(max_weight_pct=i)
-    #         ins = random_optimization(max_attempts, max_iters, maximize, max_val, length,  fitness_fn, algo)
-    #         ins.problem_size(length)
-    #         ins.plot_max_weight_pct(i)
-
-
-
 if __name__ == "__main__":
     # algo='FourPeaks'
     # fitness_fn = mlrose_hiive.FourPeaks(t_pct=0.1)
