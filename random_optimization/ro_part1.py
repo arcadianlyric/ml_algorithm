@@ -45,17 +45,17 @@ def by_algo(max_attempts, max_iters, maximize, max_val, length, algo, fitness_fn
 
 
 if __name__ == "__main__":
-    # algo='FourPeaks'
-    # fitness_fn = mlrose_hiive.FourPeaks(t_pct=0.1)
-    # max_attempts, max_iters, maximize, max_val, length = 100,1000,True,2,10
-    # _range = range(5,75,5)
-    # by_algo(max_attempts, max_iters, maximize, max_val, length, algo, fitness_fn, _range)
+    algo='FourPeaks'
+    fitness_fn = mlrose_hiive.FourPeaks(t_pct=0.1)
+    max_attempts, max_iters, maximize, max_val, length = 100,1000,True,2,10
+    _range = range(5,75,5)
+    by_algo(max_attempts, max_iters, maximize, max_val, length, algo, fitness_fn, _range)
 
-    # algo='FlipFlop'
-    # _range = range(5,75,5)
-    # fitness_fn = mlrose_hiive.FlipFlop()
-    # max_attempts, max_iters, maximize, max_val, length = 100,1000,True,2,10
-    # by_algo(max_attempts, max_iters, maximize, max_val, length, algo, fitness_fn, _range)
+    algo='FlipFlop'
+    _range = range(5,75,5)
+    fitness_fn = mlrose_hiive.FlipFlop()
+    max_attempts, max_iters, maximize, max_val, length = 100,1000,True,2,10
+    by_algo(max_attempts, max_iters, maximize, max_val, length, algo, fitness_fn, _range)
 
     algo='ContinuousPeaks'
     _range = range(5,100,5)
