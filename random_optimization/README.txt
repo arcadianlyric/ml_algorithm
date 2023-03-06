@@ -16,4 +16,6 @@ dependencies:
   - pip:
     - delayed-assert
 
-Results can be reproduced in Jupiter notebook.
+To reproduce results: 
+Part1: python ro_part1.py
+Part2: python ro_part2.py
